@@ -29,7 +29,6 @@ enum VimEngineStrategy {
 
 class KindaVimEngine {
     
-    // TODO: try a brand new install and see if the AppStorage to true works.
     var toggleHazeOverWindow: Bool = false
     var toggleMenuBarIcon: Bool = false
     var showCharactersTyped: Bool = false
