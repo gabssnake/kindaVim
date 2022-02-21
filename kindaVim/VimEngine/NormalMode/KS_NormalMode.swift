@@ -14,7 +14,7 @@ extension KindaVimEngine {
             post(ksNormalMode.a(state))
             enterInsertMode()
         case .b:
-            post(ksNormalMode.b(state))
+            post(ksNormalMode.b(times: count, state))
             endCurrentMove()
         case .backspace:
             post(ksNormalMode.h(times: count))
