@@ -149,7 +149,7 @@ extension KindaVimEngine {
             state.visualStyle = .characterwise
             enterVisualMode()
         case .w:
-            post(ksNormalMode.w(state))
+            post(ksNormalMode.w(times: count, state))
             endCurrentMove()
         case .X:
             post(ksNormalMode.dh(&state))
