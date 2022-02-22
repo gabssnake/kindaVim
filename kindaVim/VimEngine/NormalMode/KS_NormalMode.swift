@@ -56,7 +56,7 @@ extension KindaVimEngine {
             post(ksNormalMode.dollarSign(state))
             endCurrentMove()
         case .e:
-            post(ksNormalMode.e(state))
+            post(ksNormalMode.e(times: count, state))
             endCurrentMove()
         case .F:
             enterOperatorPendingForNormalMode(with: keyCombination)
