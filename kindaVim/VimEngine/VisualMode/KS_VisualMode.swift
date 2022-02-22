@@ -9,7 +9,7 @@ extension KindaVimEngine {
         case .a:
             enterOperatorPendingForVisualMode(with: keyCombination)
         case .b:
-            post(ksVisualMode.b(state))
+            post(ksVisualMode.b(times: count, state))
             endCurrentMove()
         case .backspace:
             post(ksVisualMode.h(times: count, state))
@@ -36,7 +36,7 @@ extension KindaVimEngine {
             post(ksVisualMode.dollarSign(state))
             endCurrentMove()
         case .e:
-            post(ksVisualMode.e(state))
+            post(ksVisualMode.e(times: count, state))
             endCurrentMove()
         case .escape:
             post(ksVisualMode.escape(state))
@@ -96,7 +96,7 @@ extension KindaVimEngine {
                 endCurrentMove()
             }
         case .w:    
-            post(ksVisualMode.w(state))
+            post(ksVisualMode.w(times: count, state))
             endCurrentMove()
         case .X:
             post(ksVisualMode.D(&state))
