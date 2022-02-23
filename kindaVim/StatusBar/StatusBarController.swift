@@ -18,6 +18,8 @@ class StatusBarController {
     private func setUpStatusItem() {
         statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.squareLength)
         statusItem.button?.image = toggleMenuBarIcon == true ? NSImage(named: "MenuBarIconEmpty") : NSImage(named: "MenuBarIconFull")
+        statusItem.button?.setAccessibilityLabel("kindaVim")
+        statusItem.button?.setAccessibilityHelp("kV menu bar icon")
     }
     
     private func setUpStatusItemMenu() {
