@@ -11,6 +11,12 @@ struct kindaVimApp: App {
             SettingsView()
         }
         .commands {
+            CommandMenu("File") {
+                Button("Close") {
+                    NSApp.sendAction(#selector(NSWindow.orderOut(_:)), to: nil, from: self)
+                    NSApp.hide(self)
+                }.keyboardShortcut("w")
+            }
             CommandMenu("Edit") {
                 Button("Cut") {
                     NSApp.sendAction(#selector(NSText.cut(_:)), to: nil, from: self)
