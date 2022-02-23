@@ -7,17 +7,24 @@ struct kindaVimApp: App {
     @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
 
     var body: some Scene {
-        // dumb but seems necessary to enable
-        // copy paste in Preferences...
-        WindowGroup {
-            ZStack {
-                EmptyView()
-                    .hidden()
-            }
-            .hidden()
-        }
         Settings {
             SettingsView()
+        }
+        .commands {
+            CommandMenu("Edit") {
+                Button("Cut") {
+                    NSApp.sendAction(#selector(NSText.cut(_:)), to: nil, from: self)
+                }.keyboardShortcut("x")
+                Button("Copy") {
+                    NSApp.sendAction(#selector(NSText.copy(_:)), to: nil, from: self)
+                }.keyboardShortcut("c")
+                Button("Paste") {
+                    NSApp.sendAction(#selector(NSText.paste(_:)), to: nil, from: self)
+                }.keyboardShortcut("v")
+                Button("Select All") {
+                    NSApp.sendAction(#selector(NSText.selectAll(_:)), to: nil, from: self)
+                }.keyboardShortcut("a")
+            }
         }
     }
     
