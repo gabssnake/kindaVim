@@ -133,7 +133,7 @@ extension KindaVimEngine {
             post(ksVisualMode.gDollarSign(state))
             enterVisualMode()
         case [.g, .e]:
-            post(ksVisualMode.ge(state))
+            post(ksVisualMode.ge(times: count, state))
             enterVisualMode()
         case [.g, .g]:
             post(ksVisualMode.gg(state))
