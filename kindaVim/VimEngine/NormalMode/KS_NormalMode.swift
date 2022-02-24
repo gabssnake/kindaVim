@@ -194,7 +194,7 @@ extension KindaVimEngine {
             post(ksNormalMode.cDollarSign(&state))
             enterInsertMode()
         case [.c, .e]:
-            post(ksNormalMode.ce(&state))
+            post(ksNormalMode.ce(times: count, &state))
             enterInsertMode()
         case [.c, .F]:
             ()
@@ -217,7 +217,7 @@ extension KindaVimEngine {
             post(ksNormalMode.cl(&state))
             enterInsertMode()
         case [.c, .w]:
-            post(ksNormalMode.cw(&state))
+            post(ksNormalMode.cw(times: count, &state))
             enterInsertMode()
         case [.colon, .q]:
             ()
