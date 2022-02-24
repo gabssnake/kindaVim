@@ -87,19 +87,19 @@ class KeyboardStrategyNormalModeMock: KeyboardStrategyNormalModeProtocol {
         return []
     }
     
-    func controlB(times count: Int?) -> [KeyCombination] {
+    func controlB() -> [KeyCombination] {
         functionCalled = #function
         
         return []
     }
     
-    func controlD(times count: Int?) -> [KeyCombination] {
+    func controlD() -> [KeyCombination] {
         functionCalled = #function
         
         return []
     }
     
-    func controlF(times count: Int?) -> [KeyCombination] {
+    func controlF() -> [KeyCombination] {
         functionCalled = #function
         
         return []
@@ -117,7 +117,7 @@ class KeyboardStrategyNormalModeMock: KeyboardStrategyNormalModeProtocol {
         return []
     }
         
-    func controlU(times count: Int?) -> [KeyCombination] {
+    func controlU() -> [KeyCombination] {
         functionCalled = #function
         
         return []

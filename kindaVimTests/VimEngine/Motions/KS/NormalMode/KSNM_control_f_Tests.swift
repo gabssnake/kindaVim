@@ -18,7 +18,7 @@ class KSNM_control_f_Tests: KSNM_BaseTests {
 extension KSNM_control_f_Tests {
     
     func test_that_control_d_calls_the_controlD_function_on_keyboard_strategy() {
-        XCTAssertEqual(ksNormalModeMock.functionCalled, "controlF(times:)")
+        XCTAssertEqual(ksNormalModeMock.functionCalled, "controlF()")
     }
     
     func test_that_control_d_keeps_Vim_in_normal_mode() {

@@ -27,7 +27,7 @@ struct Display {
     
     func ongoingMove(add keyCombination: KeyCombination) {
         if keyCombination.control == true {
-            Self.ongoingMove = "⌃"
+            Self.ongoingMove.append("⌃")
         }
                 
         if keyCombination.option == true {
