@@ -292,7 +292,7 @@ extension KindaVimEngine {
             post(ksNormalMode.gDollarSign(state))
             enterNormalMode()
         case [.g, .e]:            
-            post(ksNormalMode.ge(state))
+            post(ksNormalMode.ge(times: count, state))
             enterNormalMode()
         case [.g, .g]:
             post(ksNormalMode.gg(state))
