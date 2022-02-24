@@ -39,7 +39,7 @@ class KeyboardStrategyNormalModeMock: KeyboardStrategyNormalModeProtocol {
         return []
     }
     
-    func cb(_ vimEngineState: inout VimEngineState) -> [KeyCombination] {
+    func cb(times count: Int?, _ vimEngineState: inout VimEngineState) -> [KeyCombination] {
         functionCalled = #function
         
         return []

@@ -185,7 +185,7 @@ extension KindaVimEngine {
         case [.c, .a, .w]:
             enterNormalMode()
         case [.c, .b]:
-            post(ksNormalMode.cb(&state))
+            post(ksNormalMode.cb(times: count, &state))
             enterInsertMode()
         case [.c, .c]:            
             post(ksNormalMode.cc(&state))
