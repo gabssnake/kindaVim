@@ -87,19 +87,19 @@ class KeyboardStrategyNormalModeMock: KeyboardStrategyNormalModeProtocol {
         return []
     }
     
-    func controlB() -> [KeyCombination] {
+    func controlB(times count: Int?) -> [KeyCombination] {
         functionCalled = #function
         
         return []
     }
     
-    func controlD() -> [KeyCombination] {
+    func controlD(times count: Int?) -> [KeyCombination] {
         functionCalled = #function
         
         return []
     }
     
-    func controlF() -> [KeyCombination] {
+    func controlF(times count: Int?) -> [KeyCombination] {
         functionCalled = #function
         
         return []
@@ -112,6 +112,12 @@ class KeyboardStrategyNormalModeMock: KeyboardStrategyNormalModeProtocol {
     }
     
     func controlRForAXElement() -> [KeyCombination] {
+        functionCalled = #function
+        
+        return []
+    }
+        
+    func controlU(times count: Int?) -> [KeyCombination] {
         functionCalled = #function
         
         return []
@@ -387,12 +393,6 @@ class KeyboardStrategyNormalModeMock: KeyboardStrategyNormalModeProtocol {
     }
     
     func underscore(_ vimEngineState: VimEngineState) -> [KeyCombination] {
-        functionCalled = #function
-        
-        return []
-    }
-    
-    func controlU() -> [KeyCombination] {
         functionCalled = #function
         
         return []

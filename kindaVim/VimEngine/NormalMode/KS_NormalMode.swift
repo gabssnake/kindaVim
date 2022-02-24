@@ -30,13 +30,13 @@ extension KindaVimEngine {
         case .colon:
             enterOperatorPendingForNormalMode(with: keyCombination)
         case .controlB:
-            post(ksNormalMode.controlB())
+            post(ksNormalMode.controlB(times: count))
             endCurrentMove()
         case .controlD:
-            post(ksNormalMode.controlD())
+            post(ksNormalMode.controlD(times: count))
             endCurrentMove()
         case .controlF:
-            post(ksNormalMode.controlF())
+            post(ksNormalMode.controlF(times: count))
             endCurrentMove()
         case .controlH:
             post(ksNormalMode.h(times: count))
@@ -45,7 +45,7 @@ extension KindaVimEngine {
             post(ksNormalMode.controlR())
             endCurrentMove()
         case .controlU:
-            post(ksNormalMode.controlU())
+            post(ksNormalMode.controlU(times: count))
             endCurrentMove()
         case .D:
             post(ksNormalMode.dDollarSign(&state))
