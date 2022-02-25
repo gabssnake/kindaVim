@@ -75,6 +75,12 @@ class KeyboardStrategyNormalModeMock: KeyboardStrategyNormalModeProtocol {
         return []
     }
     
+    func ch(times count: Int?, _ vimEngineState: inout VimEngineState) -> [KeyCombination] {
+        functionCalled = #function
+        
+        return []
+    }
+    
     func ciw(_ vimEngineState: inout VimEngineState) -> [KeyCombination] {
         functionCalled = #function
         
@@ -165,7 +171,7 @@ class KeyboardStrategyNormalModeMock: KeyboardStrategyNormalModeProtocol {
         return []
     }
     
-    func dh(_ vimEngineState: inout VimEngineState) -> [KeyCombination] {
+    func dh(times count: Int?, _ vimEngineState: inout VimEngineState) -> [KeyCombination] {
         functionCalled = #function
         
         return []
@@ -183,7 +189,7 @@ class KeyboardStrategyNormalModeMock: KeyboardStrategyNormalModeProtocol {
         return []
     }
     
-    func dl(_ vimEngineState: inout VimEngineState) -> [KeyCombination] {
+    func dl(times count: Int?, _ vimEngineState: inout VimEngineState) -> [KeyCombination] {
         functionCalled = #function
         
         return []

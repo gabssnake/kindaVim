@@ -152,10 +152,10 @@ extension KindaVimEngine {
             post(ksNormalMode.w(times: count, state))
             endCurrentMove()
         case .X:
-            post(ksNormalMode.dh(&state))
+            post(ksNormalMode.dh(times: count, &state))
             endCurrentMove()
         case .x:
-            post(ksNormalMode.dl(&state))
+            post(ksNormalMode.dl(times: count, &state))
             endCurrentMove()
         case .Y:
             post(ksNormalMode.yy(&state))
@@ -207,6 +207,9 @@ extension KindaVimEngine {
             enterInsertMode()
         case [.c, .G]:
             post(ksNormalMode.cG(&state))
+            enterInsertMode()
+        case [.c, .h]:
+            post(ksNormalMode.ch(times: count, &state))
             enterInsertMode()
         case [.c, .i]:
             ()
@@ -269,7 +272,7 @@ extension KindaVimEngine {
             post(ksNormalMode.dG(&state))
             enterNormalMode()
         case [.d, .h]:
-            post(ksNormalMode.dh(&state))
+            post(ksNormalMode.dh(times: count, &state))
             enterNormalMode()
         case [.d, .i]:
             ()
@@ -280,7 +283,7 @@ extension KindaVimEngine {
             post(ksNormalMode.dk(&state))
             enterNormalMode()
         case [.d, .l]:
-            post(ksNormalMode.dl(&state))
+            post(ksNormalMode.dl(times: count, &state))
             enterNormalMode()
         case [.d, .w]:
             post(ksNormalMode.dw(times: count, &state))
