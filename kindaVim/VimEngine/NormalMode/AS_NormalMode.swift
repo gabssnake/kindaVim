@@ -350,6 +350,10 @@ extension KindaVimEngine {
                 let newElement = asNormalMode.cgg(on: currentElement, &state)
                 push(element: newElement)
                 enterInsertMode()
+            case [.c, .h]:
+                let newElement = asNormalMode.ch(on: currentElement, &state)
+                push(element: newElement)
+                enterInsertMode()
             case [.c, .i]:
                 ()
             case [.c, .i, .B]:
