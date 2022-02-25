@@ -1,8 +1,33 @@
-//
-//  KSNM_ch_Tests.swift
-//  kindaVimTests
-//
-//  Created by Guillaume Leclerc on 25/02/2022.
-//
+@testable import kindaVim
+import KeyCombination
+import XCTest
 
-import Foundation
+
+class KSNM_ch_Tests: KSNM_BaseTests {
+
+    override func setUp() {
+        super.setUp()
+        
+        kindaVimEngine.handle(keyCombination: KeyCombination(vimKey: .eight))
+        kindaVimEngine.handle(keyCombination: KeyCombination(key: .c))
+        kindaVimEngine.handle(keyCombination: KeyCombination(key: .h))
+    }
+
+}
+
+
+extension KSNM_ch_Tests {
+
+    func test_that_it_calls_the_correct_function_on_KS() {
+        XCTAssertEqual(ksNormalModeMock.functionCalled, "ch(times:_:)")
+    }
+    
+    func test_that_it_switches_Vim_into_InsertMode() {
+        XCTAssertEqual(kindaVimEngine.currentMode, .insert)
+    }
+    
+    func test_that_it_resets_the_count() {
+        XCTAssertNil(kindaVimEngine.count)
+    }
+
+}

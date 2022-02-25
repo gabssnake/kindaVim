@@ -18,7 +18,7 @@ class KSNM_X__Tests: KSNM_BaseTests {
 extension KSNM_X__Tests {
     
     func test_that_it_calls_the_correct_function_on_KS() {
-        XCTAssertEqual(ksNormalModeMock.functionCalled, "dh(_:)")
+        XCTAssertEqual(ksNormalModeMock.functionCalled, "dh(times:_:)")
     }
 
     func test_that_it_keeps_Vim_in_NormalMode() {
