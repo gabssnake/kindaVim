@@ -249,7 +249,7 @@ extension KindaVimEngine {
         case [.d, .a, .w]:
             enterNormalMode()
         case [.d, .b]:
-            post(ksNormalMode.db(&state))
+            post(ksNormalMode.db(times: count, &state))
             enterNormalMode()
         case [.d, .d]:
             post(ksNormalMode.dd(&state))
@@ -258,7 +258,7 @@ extension KindaVimEngine {
             post(ksNormalMode.dDollarSign(&state))
             enterNormalMode()
         case [.d, .e]:
-            post(ksNormalMode.de(&state))
+            post(ksNormalMode.de(times: count, &state))
             enterNormalMode()
         case [.d, .g]:
             ()
@@ -283,7 +283,7 @@ extension KindaVimEngine {
             post(ksNormalMode.dl(&state))
             enterNormalMode()
         case [.d, .w]:
-            post(ksNormalMode.dw(&state))
+            post(ksNormalMode.dw(times: count, &state))
             enterNormalMode()
         case [.g, .caret]:
             post(ksNormalMode.gCaret(state))
