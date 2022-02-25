@@ -126,7 +126,7 @@ extension KindaVimEngine {
             post(ksNormalMode.cc(&state))
             enterInsertMode()
         case .s:
-            post(ksNormalMode.cl(&state))
+            post(ksNormalMode.cl(times: count, &state))
             enterInsertMode()
         case .slash:
             enterOperatorPendingForNormalMode(with: keyCombination)
@@ -214,7 +214,7 @@ extension KindaVimEngine {
             post(ksNormalMode.ciw(&state))
             enterInsertMode()
         case [.c, .l]:
-            post(ksNormalMode.cl(&state))
+            post(ksNormalMode.cl(times: count, &state))
             enterInsertMode()
         case [.c, .w]:
             post(ksNormalMode.cw(times: count, &state))
