@@ -87,9 +87,10 @@ extension KindaVimEngine {
         case .k, .upArrow:
             post(ksNormalMode.k(times: count))
             endCurrentMove()
-        case .l:
+        case .l, .rightArrow:
             post(ksNormalMode.l(times: count))
             endCurrentMove()
+        // TODO: refactor
         case .leftArrow:
             post(ksNormalMode.h(times: count))
             endCurrentMove()
