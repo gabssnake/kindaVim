@@ -75,7 +75,7 @@ extension KindaVimEngine {
         case .J:
             post(ksNormalMode.J(state))
             endCurrentMove()
-        case .j, .controlJ, .downArrow:
+        case .j, .controlJ, .controlN, .downArrow:
             post(ksNormalMode.j(times: count))
             endCurrentMove()
         case .k, .upArrow:
