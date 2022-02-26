@@ -64,6 +64,20 @@ extension KindaVimEngine {
                 let newElement = asNormalMode.h(times: count, on: currentElement)
                 push(element: newElement)
                 endCurrentMove()
+            case .controlP:
+                if currentElement.role == .textArea {
+                    if jkMapping == true {
+                        let newElement = asNormalMode.gk(on: currentElement)
+                        push(element: newElement)
+                        endCurrentMove()
+                    } else {
+                        let newElement = asNormalMode.k(on: currentElement)
+                        push(element: newElement)
+                        endCurrentMove()
+                    }
+                } else {
+                    handleNormalModeUsingKeyboardStrategy(for: keyCombination)
+                }
             case .controlR:
                 let newElement = asNormalMode.controlR(on: currentElement, state)
                 push(element: newElement)
