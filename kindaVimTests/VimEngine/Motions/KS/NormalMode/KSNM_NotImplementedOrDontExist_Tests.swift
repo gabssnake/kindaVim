@@ -36,8 +36,8 @@ extension KSNM_NotImplementedOrDontExist_Tests {
         kindaVimEngine.handle(keyCombination: commandB)
         XCTAssertEqual(ksNormalModeMock.functionCalled, "")
 
-        let controlJ = KeyCombination(key: .j, control: true)
-        kindaVimEngine.handle(keyCombination: controlJ)
+        let controlL = KeyCombination(key: .l, control: true)
+        kindaVimEngine.handle(keyCombination: controlL)
         XCTAssertEqual(ksNormalModeMock.functionCalled, "")
     }
     
