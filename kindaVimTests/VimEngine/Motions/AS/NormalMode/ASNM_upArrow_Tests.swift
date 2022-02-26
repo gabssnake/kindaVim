@@ -3,17 +3,17 @@ import KeyCombination
 import XCTest
 
 
-class SucceedingASNM_k_Tests: ASNM_BaseTests {
+class SucceedingASNM_upArrow_Tests: ASNM_BaseTests {
     
     private func applyKeyCombinationsBeingTested() {
         kindaVimEngine.handle(keyCombination: KeyCombination(vimKey: .eight))
-        kindaVimEngine.handle(keyCombination: KeyCombination(key: .k))
+        kindaVimEngine.handle(keyCombination: KeyCombination(vimKey: .upArrow))
     }
     
 }
 
 
-extension SucceedingASNM_k_Tests {
+extension SucceedingASNM_upArrow_Tests {
     
     func test_that_if_we_are_on_something_different_than_a_TextArea_it_does_not_use_the_AS_but_uses_the_KS_instead() {
         kindaVimEngine.accessibilityStrategy = AccessibilityStrategySucceedingComboBoxMock()
@@ -43,7 +43,7 @@ extension SucceedingASNM_k_Tests {
 
 
 // both
-extension SucceedingASNM_k_Tests {
+extension SucceedingASNM_upArrow_Tests {
     
     func test_that_it_keeps_Vim_in_NormalMode() {
         applyKeyCombinationsBeingTested()

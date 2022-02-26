@@ -247,6 +247,20 @@ extension KindaVimEngine {
                 let newElement = asNormalMode.u(on: currentElement, state)
                 push(element: newElement)
                 endCurrentMove()
+            case .upArrow:
+                if currentElement.role == .textArea {
+                    if jkMapping == true {
+                        let newElement = asNormalMode.gk(on: currentElement)
+                        push(element: newElement)
+                        endCurrentMove()
+                    } else {
+                        let newElement = asNormalMode.k(on: currentElement)
+                        push(element: newElement)
+                        endCurrentMove()
+                    }
+                } else {
+                    handleNormalModeUsingKeyboardStrategy(for: keyCombination)
+                }
             case .underscore:
                 let newElement = asNormalMode.underscore(on: currentElement)
                 push(element: newElement)
