@@ -202,6 +202,10 @@ extension KindaVimEngine {
                 } else {
                     handleNormalModeUsingKeyboardStrategy(for: keyCombination)
                 }
+            case .rightArrow:
+                let newElement = asNormalMode.l(times: count, on: currentElement)
+                push(element: newElement)
+                endCurrentMove()
             case .rightBrace:
                 let newElement = asNormalMode.rightBrace(on: currentElement)
                 push(element: newElement)
