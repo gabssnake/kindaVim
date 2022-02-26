@@ -16,9 +16,6 @@ extension KindaVimEngine {
         case .b:
             post(ksNormalMode.b(times: count, state))
             endCurrentMove()
-        case .backspace:
-            post(ksNormalMode.h(times: count))
-            endCurrentMove()
         case .C:
             post(ksNormalMode.cDollarSign(&state))
             enterInsertMode()
@@ -37,9 +34,6 @@ extension KindaVimEngine {
             endCurrentMove()
         case .controlF:
             post(ksNormalMode.controlF())
-            endCurrentMove()
-        case .controlH:
-            post(ksNormalMode.h(times: count))
             endCurrentMove()
         case .controlR:
             post(ksNormalMode.controlR())
@@ -67,7 +61,7 @@ extension KindaVimEngine {
             endCurrentMove()
         case .g:
             enterOperatorPendingForNormalMode(with: keyCombination)
-        case .h:
+        case .h, .backspace, .controlH, .leftArrow:
             post(ksNormalMode.h(times: count))
             endCurrentMove()
         case .I:
@@ -89,10 +83,6 @@ extension KindaVimEngine {
             endCurrentMove()
         case .l, .rightArrow:
             post(ksNormalMode.l(times: count))
-            endCurrentMove()
-        // TODO: refactor
-        case .leftArrow:
-            post(ksNormalMode.h(times: count))
             endCurrentMove()
         case .N:
             if let lastSearchCommand = lastSearchCommand {
