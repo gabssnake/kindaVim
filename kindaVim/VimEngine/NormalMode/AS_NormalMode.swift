@@ -25,10 +25,6 @@ extension KindaVimEngine {
                 let newElement = asNormalMode.b(times: count, on: currentElement)
                 push(element: newElement)
                 endCurrentMove()
-            case .backspace:
-                let newElement = asNormalMode.h(times: count, on: currentElement)
-                push(element: newElement)
-                endCurrentMove()
             case .C:
                 let newElement = asNormalMode.cDollarSign(on: currentElement, &state)
                 push(element: newElement)
@@ -60,39 +56,6 @@ extension KindaVimEngine {
                 handleNormalModeUsingKeyboardStrategy(for: keyCombination)
             case .controlF:
                 handleNormalModeUsingKeyboardStrategy(for: keyCombination)
-            case .controlH:
-                let newElement = asNormalMode.h(times: count, on: currentElement)
-                push(element: newElement)
-                endCurrentMove()
-            case .controlJ:
-                if currentElement.role == .textArea {
-                    if jkMapping == true {
-                        let newElement = asNormalMode.gj(on: currentElement)
-                        push(element: newElement)
-                        endCurrentMove()
-                    } else {
-                        let newElement = asNormalMode.j(on: currentElement)
-                        push(element: newElement)
-                        endCurrentMove()
-                    }
-                } else {
-                    handleNormalModeUsingKeyboardStrategy(for: keyCombination)
-                }
-            // TODO: this is like k. should we put the synonym on the same case?
-            case .controlP:
-                if currentElement.role == .textArea {
-                    if jkMapping == true {
-                        let newElement = asNormalMode.gk(on: currentElement)
-                        push(element: newElement)
-                        endCurrentMove()
-                    } else {
-                        let newElement = asNormalMode.k(on: currentElement)
-                        push(element: newElement)
-                        endCurrentMove()
-                    }
-                } else {
-                    handleNormalModeUsingKeyboardStrategy(for: keyCombination)
-                }
             case .controlR:
                 let newElement = asNormalMode.controlR(on: currentElement, state)
                 push(element: newElement)
@@ -109,20 +72,6 @@ extension KindaVimEngine {
                 let newElement = asNormalMode.dollarSign(on: currentElement)
                 push(element: newElement)
                 endCurrentMove()
-            case .downArrow:
-                if currentElement.role == .textArea {
-                    if jkMapping == true {
-                        let newElement = asNormalMode.gj(on: currentElement)
-                        push(element: newElement)
-                        endCurrentMove()
-                    } else {
-                        let newElement = asNormalMode.j(on: currentElement)
-                        push(element: newElement)
-                        endCurrentMove()
-                    }
-                } else {
-                    handleNormalModeUsingKeyboardStrategy(for: keyCombination)
-                }
             case .E:
                 let newElement = asNormalMode.E(times: count, on: currentElement)
                 push(element: newElement)
@@ -143,7 +92,7 @@ extension KindaVimEngine {
                 endCurrentMove()
             case .g:
                 enterOperatorPendingForNormalMode(with: keyCombination)
-            case .h:
+            case .h, .backspace, .controlH, .leftArrow:
                 let newElement = asNormalMode.h(times: count, on: currentElement)
                 push(element: newElement)
                 endCurrentMove()
@@ -161,7 +110,7 @@ extension KindaVimEngine {
                 let newElement = asNormalMode.J(on: currentElement, state)
                 push(element: newElement)
                 endCurrentMove()
-            case .j:
+            case .j, .controlJ, .controlN, .downArrow:
                 if currentElement.role == .textArea {
                     if jkMapping == true {
                         let newElement = asNormalMode.gj(on: currentElement)
@@ -175,7 +124,7 @@ extension KindaVimEngine {
                 } else {
                     handleNormalModeUsingKeyboardStrategy(for: keyCombination)
                 }
-            case .k:
+            case .k, .controlP, .upArrow:
                 if currentElement.role == .textArea {
                     if jkMapping == true {
                         let newElement = asNormalMode.gk(on: currentElement)
@@ -189,12 +138,8 @@ extension KindaVimEngine {
                 } else {
                     handleNormalModeUsingKeyboardStrategy(for: keyCombination)
                 }
-            case .l:
+            case .l, .rightArrow, .space:
                 let newElement = asNormalMode.l(times: count, on: currentElement)
-                push(element: newElement)
-                endCurrentMove()
-            case .leftArrow:
-                let newElement = asNormalMode.h(times: count, on: currentElement)
                 push(element: newElement)
                 endCurrentMove()
             case .leftBracket:
@@ -245,10 +190,6 @@ extension KindaVimEngine {
                 } else {
                     handleNormalModeUsingKeyboardStrategy(for: keyCombination)
                 }
-            case .rightArrow:
-                let newElement = asNormalMode.l(times: count, on: currentElement)
-                push(element: newElement)
-                endCurrentMove()
             case .rightBrace:
                 let newElement = asNormalMode.rightBrace(on: currentElement)
                 push(element: newElement)
@@ -274,10 +215,6 @@ extension KindaVimEngine {
                 endCurrentMove()
             case .slash:
                 enterOperatorPendingForNormalMode(with: keyCombination)
-            case .space:
-                let newElement = asNormalMode.l(times: count, on: currentElement)
-                push(element: newElement)
-                endCurrentMove()
             case .T:
                 enterOperatorPendingForNormalMode(with: keyCombination)
             case .t:
@@ -290,20 +227,6 @@ extension KindaVimEngine {
                 let newElement = asNormalMode.u(on: currentElement, state)
                 push(element: newElement)
                 endCurrentMove()
-            case .upArrow:
-                if currentElement.role == .textArea {
-                    if jkMapping == true {
-                        let newElement = asNormalMode.gk(on: currentElement)
-                        push(element: newElement)
-                        endCurrentMove()
-                    } else {
-                        let newElement = asNormalMode.k(on: currentElement)
-                        push(element: newElement)
-                        endCurrentMove()
-                    }
-                } else {
-                    handleNormalModeUsingKeyboardStrategy(for: keyCombination)
-                }
             case .underscore:
                 let newElement = asNormalMode.underscore(on: currentElement)
                 push(element: newElement)
