@@ -231,6 +231,10 @@ extension KindaVimEngine {
                 endCurrentMove()
             case .slash:
                 enterOperatorPendingForNormalMode(with: keyCombination)
+            case .space:
+                let newElement = asNormalMode.l(times: count, on: currentElement)
+                push(element: newElement)
+                endCurrentMove()
             case .T:
                 enterOperatorPendingForNormalMode(with: keyCombination)
             case .t:
