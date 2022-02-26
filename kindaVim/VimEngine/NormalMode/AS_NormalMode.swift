@@ -64,6 +64,7 @@ extension KindaVimEngine {
                 let newElement = asNormalMode.h(times: count, on: currentElement)
                 push(element: newElement)
                 endCurrentMove()
+            // TODO: this is like k. should we put the synonym on the same case?
             case .controlP:
                 if currentElement.role == .textArea {
                     if jkMapping == true {
@@ -94,6 +95,20 @@ extension KindaVimEngine {
                 let newElement = asNormalMode.dollarSign(on: currentElement)
                 push(element: newElement)
                 endCurrentMove()
+            case .downArrow:
+                if currentElement.role == .textArea {
+                    if jkMapping == true {
+                        let newElement = asNormalMode.gj(on: currentElement)
+                        push(element: newElement)
+                        endCurrentMove()
+                    } else {
+                        let newElement = asNormalMode.j(on: currentElement)
+                        push(element: newElement)
+                        endCurrentMove()
+                    }
+                } else {
+                    handleNormalModeUsingKeyboardStrategy(for: keyCombination)
+                }
             case .E:
                 let newElement = asNormalMode.E(times: count, on: currentElement)
                 push(element: newElement)
