@@ -226,7 +226,7 @@ extension KindaVimEngine {
                 let newElement = asVisualMode.gI(on: currentElement, state)
                 push(element: newElement)
                 enterVisualMode()
-            case [.g, .j]:
+            case [.g, .j], [.g, .downArrow]:
                 if currentElement.role == .textArea {
                     let newElement = asVisualMode.gj(on: currentElement, state)
                     push(element: newElement)
@@ -234,7 +234,7 @@ extension KindaVimEngine {
                 } else {
                     parseOperatorCommandForVisualModeUsingKeyboardStrategy()
                 }
-            case [.g, .k]:
+            case [.g, .k], [.g, .upArrow]:
                 if currentElement.role == .textArea {
                     let newElement = asVisualMode.gk(on: currentElement, state)
                     push(element: newElement)
