@@ -101,7 +101,7 @@ extension KindaVimEngine {
                 } else {
                     handleVisualModeUsingKeyboardStrategy(for: keyCombination)
                 }
-            case .l:
+            case .l, .rightArrow, .space:
                 let newElement = asVisualMode.l(on: currentElement, state)
                 push(element: newElement)
                 endCurrentMove()
