@@ -57,7 +57,7 @@ extension KindaVimEngine {
         case .k, .controlP, .upArrow:
             post(ksVisualMode.k(state))
             endCurrentMove()
-        case .l:
+        case .l, .rightArrow, .space:
             post(ksVisualMode.l(times: count, state))
             endCurrentMove()
         case .leftArrow:
