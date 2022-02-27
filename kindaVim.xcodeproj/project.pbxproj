@@ -52,6 +52,8 @@
 		9164F35027C2A8BE00B3C2BB /* ASVM_,_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9164F34F27C2A8BE00B3C2BB /* ASVM_,_Tests.swift */; };
 		9166040F27A3FB9900B13C6D /* BedtimePopoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917374A6279EC345003C563D /* BedtimePopoverView.swift */; };
 		9166041127A3FC3C00B13C6D /* Paddle.framework in Copy Paddle */ = {isa = PBXBuildFile; fileRef = 91943A30279D1558001C8393 /* Paddle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		916993FF27CB6FC40038E4C0 /* ASVM_upArrow_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916993FE27CB6FC40038E4C0 /* ASVM_upArrow_Tests.swift */; };
+		9169940127CB70C60038E4C0 /* ASVM_control_p_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9169940027CB70C60038E4C0 /* ASVM_control_p_Tests.swift */; };
 		916ACF9126FE086B000E9757 /* kindaVimApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916ACF9026FE086B000E9757 /* kindaVimApp.swift */; };
 		916ACF9526FE086C000E9757 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 916ACF9426FE086C000E9757 /* Assets.xcassets */; };
 		916ACF9826FE086C000E9757 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 916ACF9726FE086C000E9757 /* Preview Assets.xcassets */; };
@@ -601,6 +603,8 @@
 		914DA4962743C20E005748F7 /* CountSystemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountSystemTests.swift; sourceTree = "<group>"; };
 		9164F34D27C2A8B700B3C2BB /* ASVM_;_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ASVM_;_Tests.swift"; sourceTree = "<group>"; };
 		9164F34F27C2A8BE00B3C2BB /* ASVM_,_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ASVM_,_Tests.swift"; sourceTree = "<group>"; };
+		916993FE27CB6FC40038E4C0 /* ASVM_upArrow_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASVM_upArrow_Tests.swift; sourceTree = "<group>"; };
+		9169940027CB70C60038E4C0 /* ASVM_control_p_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASVM_control_p_Tests.swift; sourceTree = "<group>"; };
 		916ACF8D26FE086B000E9757 /* kindaVim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kindaVim.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		916ACF9026FE086B000E9757 /* kindaVimApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kindaVimApp.swift; sourceTree = "<group>"; };
 		916ACF9426FE086C000E9757 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -1007,7 +1011,6 @@
 		91D40D3427BB91650033C744 /* KSNM_slash_Escape_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KSNM_slash_Escape_Tests.swift; sourceTree = "<group>"; };
 		91D475F826FF67A10007187B /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		91D6EF7C27CA99D4000711AB /* ASNM_rightArrow_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASNM_rightArrow_Tests.swift; sourceTree = "<group>"; };
-		91D6EF7E27CA99FE000711AB /* KeyCombination */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = KeyCombination; path = ../KeyCombination; sourceTree = "<group>"; };
 		91D6EF7F27CA9BA8000711AB /* ASNM_space_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASNM_space_Tests.swift; sourceTree = "<group>"; };
 		91D6EF8127CA9DDF000711AB /* ASNM_upArrow_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASNM_upArrow_Tests.swift; sourceTree = "<group>"; };
 		91D6EF8327CAA0DB000711AB /* ASNM_control_p_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASNM_control_p_Tests.swift; sourceTree = "<group>"; };
@@ -1212,7 +1215,6 @@
 		916ACF8426FE086A000E9757 = {
 			isa = PBXGroup;
 			children = (
-				91D6EF7E27CA99FE000711AB /* KeyCombination */,
 				916ACF8F26FE086B000E9757 /* kindaVim */,
 				916ACFA126FE086C000E9757 /* kindaVimTests */,
 				916ACFAB26FE086C000E9757 /* kindaVimUITests */,
@@ -1550,6 +1552,7 @@
 				918F2F232787551200AD68DF /* ASVM_j_Tests.swift */,
 				918F2F092787551000AD68DF /* ASVM_k_Tests.swift */,
 				918F2F152787551100AD68DF /* ASVM_l_Tests.swift */,
+				9169940027CB70C60038E4C0 /* ASVM_control_p_Tests.swift */,
 				91A9D9A827B82DAC00FFDCBA /* ASVM_leftArrow_Tests.swift */,
 				918F2F2D2787551300AD68DF /* ASVM_o_Tests.swift */,
 				91BEE352278D88530037FD1A /* ASVM_R__Tests.swift */,
@@ -1557,6 +1560,7 @@
 				91BEE347278D81930037FD1A /* ASVM_s_Tests.swift */,
 				918F2F282787551200AD68DF /* ASVM_T__Tests.swift */,
 				918F2F122787551100AD68DF /* ASVM_t_Tests.swift */,
+				916993FE27CB6FC40038E4C0 /* ASVM_upArrow_Tests.swift */,
 				918F2F192787551100AD68DF /* ASVM_V__Tests.swift */,
 				918F2F2C2787551300AD68DF /* ASVM_v_Tests.swift */,
 				918F2F172787551100AD68DF /* ASVM_W__Tests.swift */,
@@ -2267,6 +2271,7 @@
 				918F2FDD2787557800AD68DF /* KSNM_ce_Tests.swift in Sources */,
 				91D2DB612795C5F800CC7978 /* KSNM_dip_Tests.swift in Sources */,
 				918F2F492787551300AD68DF /* ASVM_gj_Tests.swift in Sources */,
+				9169940127CB70C60038E4C0 /* ASVM_control_p_Tests.swift in Sources */,
 				918F2EBC278754D100AD68DF /* ASNM_v_Tests.swift in Sources */,
 				91BEE34A278D81EB0037FD1A /* KSVM_s_Tests.swift in Sources */,
 				918F2EFD278754D100AD68DF /* ASNM_daw_Tests.swift in Sources */,
@@ -2553,6 +2558,7 @@
 				918F2FD02787557800AD68DF /* KSNM_yi'_Tests.swift in Sources */,
 				918F2E9B278754D100AD68DF /* ASNM_yi]_Tests.swift in Sources */,
 				918F2E1027874E3200AD68DF /* AutoFallbackTests.swift in Sources */,
+				916993FF27CB6FC40038E4C0 /* ASVM_upArrow_Tests.swift in Sources */,
 				918F2EDB278754D100AD68DF /* ASNM_o_Tests.swift in Sources */,
 				918F2FBC2787557800AD68DF /* KSNM_cW__Tests.swift in Sources */,
 				91834910279149B100F71528 /* KSCL_ZZ__Tests.swift in Sources */,

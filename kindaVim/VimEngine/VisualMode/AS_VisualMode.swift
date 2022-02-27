@@ -93,7 +93,7 @@ extension KindaVimEngine {
                 } else {
                     handleVisualModeUsingKeyboardStrategy(for: keyCombination)
                 }
-            case .k:
+            case .k, .controlP, .upArrow:
                 if currentElement.role == .textArea {
                     let newElement = asVisualMode.k(on: currentElement, state)
                     push(element: newElement)
