@@ -550,7 +550,7 @@ extension KindaVimEngine {
                 let newElement = asNormalMode.gI(on: currentElement)
                 push(element: newElement)
                 enterInsertMode()
-            case [.g, .j]:
+            case [.g, .j], [.g, .downArrow]:
                 if currentElement.role == .textArea {
                     let newElement = asNormalMode.gj(on: currentElement)
                     push(element: newElement)
@@ -558,7 +558,7 @@ extension KindaVimEngine {
                 } else {
                     parseOperatorCommandForNormalModeUsingKeyboardStrategy()
                 }
-            case [.g, .k]:
+            case [.g, .k], [.g, .upArrow]:
                 if currentElement.role == .textArea {
                     let newElement = asNormalMode.gk(on: currentElement)
                     push(element: newElement)
