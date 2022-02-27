@@ -57,6 +57,9 @@ extension KindaVimEngine {
         case .R:
             post(ksVisualMode.R(&state))
             enterInsertMode()
+        case .return, .controlM, .plus:
+            post(ksVisualMode.`return`(times: count, &state))
+            state.lastMoveBipped ? enterInsertMode() : endCurrentMove()
         case .S:
             post(ksVisualMode.S(&state))
             enterInsertMode()

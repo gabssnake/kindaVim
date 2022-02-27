@@ -3,18 +3,18 @@ import KeyCombination
 import XCTest
 
 
-class KSVM_return_Tests: KSVM_BaseTests {
+class KSVM_plus_Tests: KSVM_BaseTests {
 
     private func applyKeyCombinationsBeingTested() {
         kindaVimEngine.handle(keyCombination: KeyCombination(vimKey: .eight))
-        kindaVimEngine.handle(keyCombination: KeyCombination(key: .return))
+        kindaVimEngine.handle(keyCombination: KeyCombination(vimKey: .plus))
     }
 
 }
 
 
 // see KSNM for blah blah
-extension KSVM_return_Tests {
+extension KSVM_plus_Tests {
     
     func test_that_if_KS_return_set_the_lastMoveBipped_to_true_then_it_goes_to_InsertMode() {
         kindaVimEngine.state.lastMoveBipped = true
@@ -33,7 +33,7 @@ extension KSVM_return_Tests {
 }
 
 
-extension KSVM_return_Tests {
+extension KSVM_plus_Tests {
     
     func test_that_it_calls_the_correct_function_on_KS() {
         applyKeyCombinationsBeingTested()
