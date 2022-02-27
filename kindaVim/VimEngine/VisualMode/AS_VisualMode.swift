@@ -105,6 +105,14 @@ extension KindaVimEngine {
                 let newElement = asVisualMode.R(on: currentElement, &state)
                 push(element: newElement)
                 enterInsertMode()  
+            case .return:
+                if currentElement.role == .textArea {
+                    let newElement = asVisualMode.`return`(on: currentElement, &state)
+                    push(element: newElement)
+                    endCurrentMove()
+                } else {
+                    handleVisualModeUsingKeyboardStrategy(for: keyCombination)
+                }
             case .S:
                 let newElement = asVisualMode.S(on: currentElement, &state)
                 push(element: newElement)
