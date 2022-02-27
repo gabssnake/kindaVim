@@ -28,7 +28,7 @@ extension SucceedingASNM_gDownArrow_Tests {
         kindaVimEngine.accessibilityStrategy = AccessibilityStrategySucceedingTextAreaMock()
         applyKeyCombinationsBeingTested()
                 
-        XCTAssertEqual(asNormalModeMock.functionCalled, "gj(on:)")
+        XCTAssertEqual(asNormalModeMock.functionCalled, "gj(times:on:)")
     }
 
     func test_that_it_keeps_Vim_in_NormalMode() {

@@ -113,7 +113,7 @@ extension KindaVimEngine {
             case .j, .controlJ, .controlN, .downArrow:
                 if currentElement.role == .textArea {
                     if jkMapping == true {
-                        let newElement = asNormalMode.gj(on: currentElement)
+                        let newElement = asNormalMode.gj(times: count, on: currentElement)
                         push(element: newElement)
                         endCurrentMove()
                     } else {
@@ -127,7 +127,7 @@ extension KindaVimEngine {
             case .k, .controlP, .upArrow:
                 if currentElement.role == .textArea {
                     if jkMapping == true {
-                        let newElement = asNormalMode.gk(on: currentElement)
+                        let newElement = asNormalMode.gk(times: count, on: currentElement)
                         push(element: newElement)
                         endCurrentMove()
                     } else {
@@ -552,7 +552,7 @@ extension KindaVimEngine {
                 enterInsertMode()
             case [.g, .j], [.g, .downArrow]:
                 if currentElement.role == .textArea {
-                    let newElement = asNormalMode.gj(on: currentElement)
+                    let newElement = asNormalMode.gj(times: count, on: currentElement)
                     push(element: newElement)
                     enterNormalMode()
                 } else {
@@ -560,7 +560,7 @@ extension KindaVimEngine {
                 }
             case [.g, .k], [.g, .upArrow]:
                 if currentElement.role == .textArea {
-                    let newElement = asNormalMode.gk(on: currentElement)
+                    let newElement = asNormalMode.gk(times: count, on: currentElement)
                     push(element: newElement)
                     enterNormalMode()
                 } else {

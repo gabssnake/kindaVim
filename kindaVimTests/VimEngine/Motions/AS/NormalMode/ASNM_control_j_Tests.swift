@@ -36,7 +36,7 @@ extension SucceedingASNM_control_j_Tests {
         kindaVimEngine.jkMapping = true
         applyKeyCombinationsBeingTested()
         
-        XCTAssertEqual(asNormalModeMock.functionCalled, "gj(on:)")
+        XCTAssertEqual(asNormalModeMock.functionCalled, "gj(times:on:)")
     }
 
 }
