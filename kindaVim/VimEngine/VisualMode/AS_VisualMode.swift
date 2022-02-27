@@ -18,10 +18,6 @@ extension KindaVimEngine {
                 let newElement = asVisualMode.b(on: currentElement, state)
                 push(element: newElement)
                 endCurrentMove()
-            case .backspace:
-                let newElement = asVisualMode.h(times: count, on: currentElement, state)
-                push(element: newElement)
-                endCurrentMove()
             case .C:
                 let newElement = asVisualMode.C(on: currentElement, &state)
                 push(element: newElement)
@@ -40,10 +36,6 @@ extension KindaVimEngine {
                     push(element: newElement)
                 }
                 
-                endCurrentMove()
-            case .controlH:
-                let newElement = asVisualMode.h(times: count, on: currentElement, state)
-                push(element: newElement)
                 endCurrentMove()
             case .D:
                 let newElement = asVisualMode.D(on: currentElement, &state)
@@ -79,7 +71,7 @@ extension KindaVimEngine {
                 endCurrentMove()
             case .g:
                 enterOperatorPendingForVisualMode(with: keyCombination)
-            case .h:
+            case .h, .backspace, .controlH, .leftArrow:
                 let newElement = asVisualMode.h(times: count, on: currentElement, state)
                 push(element: newElement)
                 endCurrentMove()
@@ -103,11 +95,6 @@ extension KindaVimEngine {
                 }
             case .l, .rightArrow, .space:
                 let newElement = asVisualMode.l(on: currentElement, state)
-                push(element: newElement)
-                endCurrentMove()
-            // TODO: refactor
-            case .leftArrow:
-                let newElement = asVisualMode.h(times: count, on: currentElement, state)
                 push(element: newElement)
                 endCurrentMove()
             case .o:
