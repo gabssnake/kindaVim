@@ -19,7 +19,7 @@ class KSNM_gj_Tests: KSNM_BaseTests {
 extension KSNM_gj_Tests {
     
     func test_that_it_calls_the_correct_function_on_KS() {
-        XCTAssertEqual(ksNormalModeMock.functionCalled, "gj()")
+        XCTAssertEqual(ksNormalModeMock.functionCalled, "gj(times:)")
     }
     
     func test_that_it_keeps_Vim_in_NormalMode() {

@@ -295,10 +295,10 @@ extension KindaVimEngine {
             post(ksNormalMode.gI(state))
             enterInsertMode()
         case [.g, .j], [.g, .downArrow]:
-            post(ksNormalMode.gj())
+            post(ksNormalMode.gj(times: count))
             enterNormalMode()
         case [.g, .k], [.g, .upArrow]:
-            post(ksNormalMode.gk())
+            post(ksNormalMode.gk(times: count))
             enterNormalMode()
         case [.g, .underscore]:            
             post(ksNormalMode.gUnderscore(state))

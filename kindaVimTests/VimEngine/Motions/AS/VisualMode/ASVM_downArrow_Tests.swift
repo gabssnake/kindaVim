@@ -20,7 +20,7 @@ extension SucceedingASVM_downArrow_Tests {
         applyKeyCombinationsBeingTested()
         
         XCTAssertEqual(asVisualModeMock.functionCalled, "")
-        XCTAssertEqual(ksVisualModeMock.functionCalled, "j(_:)")
+        XCTAssertEqual(ksVisualModeMock.functionCalled, "j(times:_:)")
     }
     
     func test_that_if_we_are_on_a_TextArea_it_calls_the_correct_function_on_the_AccessibilityStrategy() {

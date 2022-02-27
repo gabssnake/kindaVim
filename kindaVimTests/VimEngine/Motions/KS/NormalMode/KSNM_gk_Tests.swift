@@ -19,7 +19,7 @@ class KSNM_gk_Tests: KSNM_BaseTests {
 extension KSNM_gk_Tests {
 
     func test_that_it_calls_the_correct_function_on_KS() {
-        XCTAssertEqual(ksNormalModeMock.functionCalled, "gk()")
+        XCTAssertEqual(ksNormalModeMock.functionCalled, "gk(times:)")
     }
     
     func test_that_it_keeps_Vim_in_NormalMode() {

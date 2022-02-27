@@ -19,7 +19,7 @@ class KSVM_gj_Tests: KSVM_BaseTests {
 extension KSVM_gj_Tests {
 
     func test_that_it_calls_the_correct_function_on_KS() {
-        XCTAssertEqual(ksVisualModeMock.functionCalled, "gj(_:)")
+        XCTAssertEqual(ksVisualModeMock.functionCalled, "gj(times:_:)")
     }
     
     func test_that_it_keeps_Vim_in_VisualMode() {

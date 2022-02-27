@@ -22,7 +22,7 @@ extension SucceedingASNM_gk_Tests {
         applyKeyCombinationsBeingTested()
         
         XCTAssertEqual(asNormalModeMock.functionCalled, "")
-        XCTAssertEqual(ksNormalModeMock.functionCalled, "gk()")
+        XCTAssertEqual(ksNormalModeMock.functionCalled, "gk(times:)")
     }
 
     func test_that_if_we_are_on_a_TextArea_it_calls_the_correct_function_on_accessibility_strategy() {

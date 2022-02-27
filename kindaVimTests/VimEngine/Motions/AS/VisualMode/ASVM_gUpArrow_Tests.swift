@@ -21,7 +21,7 @@ extension SucceedingASVM_gUpArrow_Tests {
         applyKeyCombinationsBeingTested()
         
         XCTAssertEqual(asVisualModeMock.functionCalled, "")
-        XCTAssertEqual(ksVisualModeMock.functionCalled, "gk(_:)")
+        XCTAssertEqual(ksVisualModeMock.functionCalled, "gk(times:_:)")
     }
     
     func test_that_if_we_are_on_a_TextArea_it_calls_the_correct_function_on_the_AccessibilityStrategy() {
