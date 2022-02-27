@@ -51,7 +51,7 @@ extension KindaVimEngine {
             endCurrentMove()
         case .i:
             enterOperatorPendingForVisualMode(with: keyCombination)
-        case .j:
+        case .j, .controlJ, .controlN, .downArrow:
             post(ksVisualMode.j(state))
             endCurrentMove()
         case .k, .controlP, .upArrow:
@@ -60,6 +60,7 @@ extension KindaVimEngine {
         case .l, .rightArrow, .space:
             post(ksVisualMode.l(times: count, state))
             endCurrentMove()
+        // TODO: refactor
         case .leftArrow:
             post(ksVisualMode.h(times: count, state))
             endCurrentMove()

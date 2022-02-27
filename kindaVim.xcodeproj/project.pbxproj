@@ -63,6 +63,9 @@
 		9169940F27CB75670038E4C0 /* KSVM_control_p_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9169940E27CB75670038E4C0 /* KSVM_control_p_Tests.swift */; };
 		9169941127CB76540038E4C0 /* KSVM_rightArrow_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9169941027CB76540038E4C0 /* KSVM_rightArrow_Tests.swift */; };
 		9169941327CB76A60038E4C0 /* KSVM_space_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9169941227CB76A60038E4C0 /* KSVM_space_Tests.swift */; };
+		9169941527CB77180038E4C0 /* KSVM_downArrow_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9169941427CB77180038E4C0 /* KSVM_downArrow_Tests.swift */; };
+		9169941727CB77770038E4C0 /* KSVM_control_j_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9169941627CB77770038E4C0 /* KSVM_control_j_Tests.swift */; };
+		9169941927CB77BE0038E4C0 /* KSVM_control_n_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9169941827CB77BE0038E4C0 /* KSVM_control_n_Tests.swift */; };
 		916ACF9126FE086B000E9757 /* kindaVimApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916ACF9026FE086B000E9757 /* kindaVimApp.swift */; };
 		916ACF9526FE086C000E9757 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 916ACF9426FE086C000E9757 /* Assets.xcassets */; };
 		916ACF9826FE086C000E9757 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 916ACF9726FE086C000E9757 /* Preview Assets.xcassets */; };
@@ -623,6 +626,9 @@
 		9169940E27CB75670038E4C0 /* KSVM_control_p_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KSVM_control_p_Tests.swift; sourceTree = "<group>"; };
 		9169941027CB76540038E4C0 /* KSVM_rightArrow_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KSVM_rightArrow_Tests.swift; sourceTree = "<group>"; };
 		9169941227CB76A60038E4C0 /* KSVM_space_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KSVM_space_Tests.swift; sourceTree = "<group>"; };
+		9169941427CB77180038E4C0 /* KSVM_downArrow_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KSVM_downArrow_Tests.swift; sourceTree = "<group>"; };
+		9169941627CB77770038E4C0 /* KSVM_control_j_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KSVM_control_j_Tests.swift; sourceTree = "<group>"; };
+		9169941827CB77BE0038E4C0 /* KSVM_control_n_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KSVM_control_n_Tests.swift; sourceTree = "<group>"; };
 		916ACF8D26FE086B000E9757 /* kindaVim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kindaVim.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		916ACF9026FE086B000E9757 /* kindaVimApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kindaVimApp.swift; sourceTree = "<group>"; };
 		916ACF9426FE086C000E9757 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -1746,6 +1752,9 @@
 				918F30272787559B00AD68DF /* KSVM_C__Tests.swift */,
 				918F303F2787559C00AD68DF /* KSVM_c_Tests.swift */,
 				91E9934627B95EA80085E271 /* KSVM_control_h_Tests.swift */,
+				9169941427CB77180038E4C0 /* KSVM_downArrow_Tests.swift */,
+				9169941627CB77770038E4C0 /* KSVM_control_j_Tests.swift */,
+				9169941827CB77BE0038E4C0 /* KSVM_control_n_Tests.swift */,
 				9169940E27CB75670038E4C0 /* KSVM_control_p_Tests.swift */,
 				9169941227CB76A60038E4C0 /* KSVM_space_Tests.swift */,
 				918F30222787559A00AD68DF /* KSVM_D__Tests.swift */,
@@ -2465,6 +2474,7 @@
 				918F30162787557800AD68DF /* KSNM_yt_Tests.swift in Sources */,
 				918F30022787557800AD68DF /* KSNM_cB__Tests.swift in Sources */,
 				91BBC4E3278765A8008DE977 /* KSNM_S__Tests.swift in Sources */,
+				9169941927CB77BE0038E4C0 /* KSVM_control_n_Tests.swift in Sources */,
 				918F30572787559C00AD68DF /* KSVM_y_Tests.swift in Sources */,
 				918F2E9E278754D100AD68DF /* ASNM_cgg_Tests.swift in Sources */,
 				918F2FC12787557800AD68DF /* KSNM_g0_Tests.swift in Sources */,
@@ -2480,6 +2490,7 @@
 				918F30042787557800AD68DF /* KSNM_0_Tests.swift in Sources */,
 				918F2FE62787557800AD68DF /* KSNM_gI__Tests.swift in Sources */,
 				918F2ED4278754D100AD68DF /* ASNM_D__Tests.swift in Sources */,
+				9169941527CB77180038E4C0 /* KSVM_downArrow_Tests.swift in Sources */,
 				918F2FDC2787557800AD68DF /* KSNM_ci"_Tests.swift in Sources */,
 				91A9D99C27B6BB1B00FFDCBA /* ASNM_?_Delete_Tests.swift in Sources */,
 				918F2EA3278754D100AD68DF /* ASNM_yi"_Tests.swift in Sources */,
@@ -2493,6 +2504,7 @@
 				918F2FE82787557800AD68DF /* KSNM_yF__Tests.swift in Sources */,
 				918F2EC2278754D100AD68DF /* ASNM_u_Tests.swift in Sources */,
 				918F2FFB2787557800AD68DF /* KSNM_control_b_Tests.swift in Sources */,
+				9169941727CB77770038E4C0 /* KSVM_control_j_Tests.swift in Sources */,
 				91BEE348278D81930037FD1A /* ASVM_s_Tests.swift in Sources */,
 				918F2F482787551300AD68DF /* ASVM_C__Tests.swift in Sources */,
 				918F2FFE2787557800AD68DF /* KSNM_$_Tests.swift in Sources */,
