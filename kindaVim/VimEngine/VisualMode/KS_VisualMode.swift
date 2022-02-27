@@ -132,10 +132,10 @@ extension KindaVimEngine {
         case [.g, .I]:
             post(ksVisualMode.gI(state))
             enterVisualMode()
-        case [.g, .j]:
+        case [.g, .j], [.g, .downArrow]:
             post(ksVisualMode.gj(state))
             enterVisualMode()
-        case [.g, .k]:
+        case [.g, .k], [.g, .upArrow]:
             post(ksVisualMode.gk(state))
             enterVisualMode()
         case [.g, .zero]:
