@@ -11,9 +11,6 @@ extension KindaVimEngine {
         case .b:
             post(ksVisualMode.b(times: count, state))
             endCurrentMove()
-        case .backspace:
-            post(ksVisualMode.h(times: count, state))
-            endCurrentMove()
         case .C:
             post(ksVisualMode.C(&state))
             enterInsertMode()
@@ -22,9 +19,6 @@ extension KindaVimEngine {
             enterInsertMode()
         case .caret:
             post(ksVisualMode.caret(state))
-            endCurrentMove()
-        case .controlH:
-            post(ksVisualMode.h(times: count, state))
             endCurrentMove()
         case .D:
             post(ksVisualMode.D(&state))
@@ -46,7 +40,7 @@ extension KindaVimEngine {
             endCurrentMove()
         case .g:
             enterOperatorPendingForVisualMode(with: keyCombination)
-        case .h:
+        case .h, .backspace, .controlH, .leftArrow:
             post(ksVisualMode.h(times: count, state))
             endCurrentMove()
         case .i:
@@ -59,10 +53,6 @@ extension KindaVimEngine {
             endCurrentMove()
         case .l, .rightArrow, .space:
             post(ksVisualMode.l(times: count, state))
-            endCurrentMove()
-        // TODO: refactor
-        case .leftArrow:
-            post(ksVisualMode.h(times: count, state))
             endCurrentMove()
         case .R:
             post(ksVisualMode.R(&state))
