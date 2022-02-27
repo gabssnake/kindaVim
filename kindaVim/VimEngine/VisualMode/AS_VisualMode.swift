@@ -85,7 +85,7 @@ extension KindaVimEngine {
                 endCurrentMove()
             case .i:
                 enterOperatorPendingForVisualMode(with: keyCombination)
-            case .j:
+            case .j, .controlJ, .controlN, .downArrow:
                 if currentElement.role == .textArea {
                     let newElement = asVisualMode.j(on: currentElement, state)
                     push(element: newElement)
@@ -105,6 +105,7 @@ extension KindaVimEngine {
                 let newElement = asVisualMode.l(on: currentElement, state)
                 push(element: newElement)
                 endCurrentMove()
+            // TODO: refactor
             case .leftArrow:
                 let newElement = asVisualMode.h(times: count, on: currentElement, state)
                 push(element: newElement)
