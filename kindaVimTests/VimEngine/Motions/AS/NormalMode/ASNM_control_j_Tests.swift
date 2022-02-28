@@ -28,7 +28,7 @@ extension SucceedingASNM_control_j_Tests {
         kindaVimEngine.jkMapping = false
         applyKeyCombinationsBeingTested()
         
-        XCTAssertEqual(asNormalModeMock.functionCalled, "j(on:)")
+        XCTAssertEqual(asNormalModeMock.functionCalled, "j(times:on:)")
     }
         
     func test_that_on_a_TextArea_if_it_is_remapped_it_calls_gj_on_AS() {

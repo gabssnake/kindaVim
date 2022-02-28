@@ -28,7 +28,7 @@ extension SucceedingASNM_upArrow_Tests {
         kindaVimEngine.jkMapping = false
         applyKeyCombinationsBeingTested()
         
-        XCTAssertEqual(asNormalModeMock.functionCalled, "k(on:)")
+        XCTAssertEqual(asNormalModeMock.functionCalled, "k(times:on:)")
     }
         
     func test_that_on_a_TextArea_if_it_is_remapped_it_calls_gk_on_AS() {

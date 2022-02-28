@@ -117,7 +117,7 @@ extension KindaVimEngine {
                         push(element: newElement)
                         endCurrentMove()
                     } else {
-                        let newElement = asNormalMode.j(on: currentElement)
+                        let newElement = asNormalMode.j(times: count, on: currentElement)
                         push(element: newElement)
                         endCurrentMove()
                     }
@@ -131,7 +131,7 @@ extension KindaVimEngine {
                         push(element: newElement)
                         endCurrentMove()
                     } else {
-                        let newElement = asNormalMode.k(on: currentElement)
+                        let newElement = asNormalMode.k(times: count, on: currentElement)
                         push(element: newElement)
                         endCurrentMove()
                     }
