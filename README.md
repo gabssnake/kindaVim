@@ -3,7 +3,7 @@
     <h1>brings Vim moves to macOS input fields. and non input fields. is that everywhere yet?</h1>
 </div>
 
-![awesome stuff happening in there](htts://github.com/godbout/kindaVim/blob/media/gif.gif "hehe")
+![awesome stuff happening in there](https://github.com/godbout/kindaVim/blob/media/gif.gif "hehe")
 
 ---
 
@@ -21,32 +21,32 @@ maybe [watch the videos](https://www.youtube.com/channel/UC3ZP3QFMhNn3ivJgqoEW4U
 
 ## native apps with macOS Accessibility support
 
-![Xcode input](htts://github.com/godbout/kindaVim/blob/media/Xcode-input.gif "Xcode input")
+![Xcode input](https://github.com/godbout/kindaVim/blob/media/Xcode-input.gif "Xcode input")
 
 ## native apps without macOS Accessibility support
 
-![Mail input](htts://github.com/godbout/kindaVim/blob/media/Mail-input.gif "Mail input")
+![Mail input](https://github.com/godbout/kindaVim/blob/media/Mail-input.gif "Mail input")
 
 ## restricted apps with some macOS Accessibility support
 
-![Safari input](htts://github.com/godbout/kindaVim/blob/media/Safari-input.gif "Safari input")
+![Safari input](https://github.com/godbout/kindaVim/blob/media/Safari-input.gif "Safari input")
 
 ## Electron apps with (kinda) proper macOS Accessibility support
 
-![Logseq input](htts://github.com/godbout/kindaVim/blob/media/Logseq-input.gif "Logseq input")
+![Logseq input](https://github.com/godbout/kindaVim/blob/media/Logseq-input.gif "Logseq input")
 
 ## Electron apps with bad bad bad macOS Accessibility support
 
-![ClickUp input](htts://github.com/godbout/kindaVim/blob/media/ClickUp-input.gif "ClickUp input")
+![ClickUp input](https://github.com/godbout/kindaVim/blob/media/ClickUp-input.gif "ClickUp input")
 
 ## UI Elements
 
-![Xcode UI1](htts://github.com/godbout/kindaVim/blob/media/Xcode-UI1.gif "Xcode UI1")
-![Xcode UI2](htts://github.com/godbout/kindaVim/blob/media/Xcode-UI2.gif "Xcode UI2")
-![Mail UI](htts://github.com/godbout/kindaVim/blob/media/Mail-UI.gif "Mail UI")
+![Xcode UI1](https://github.com/godbout/kindaVim/blob/media/Xcode-UI1.gif "Xcode UI1")
+![Xcode UI2](https://github.com/godbout/kindaVim/blob/media/Xcode-UI2.gif "Xcode UI2")
+![Mail UI](https://github.com/godbout/kindaVim/blob/media/Mail-UI.gif "Mail UI")
 https://github.com/godbout/kindaVim/blob/media/Alfred-UI.gif?raw=true
-![Alfred UI](htts://github.com/godbout/kindaVim/blob/media/Alfred-UI.gif "Alfred UI")
-![Help Menu UI](htts://github.com/godbout/kindaVim/blob/media/Help-Menu-UI.gif "Help Menu UI")
+![Alfred UI](https://github.com/godbout/kindaVim/blob/media/Alfred-UI.gif "Alfred UI")
+![Help Menu UI](https://github.com/godbout/kindaVim/blob/media/Help-Menu-UI.gif "Help Menu UI")
 
 # HOW DOES THAT SHIT WORK
 
@@ -63,15 +63,15 @@ e.g. `/the`:
 
 * input is text readable
 
-![input text readable](htts://github.com/godbout/kindaVim/blob/media/search-AS.gif "input text readable")
+![input text readable](https://github.com/godbout/kindaVim/blob/media/search-AS.gif "input text readable")
 
 * input is text not readable
 
-![input text not readable](htts://github.com/godbout/kindaVim/blob/media/search-KSTE.gif "input text not readable")
+![input text not readable](https://github.com/godbout/kindaVim/blob/media/search-KSTE.gif "input text not readable")
 
 * input is not text
 
-![input not text](htts://github.com/godbout/kindaVim/blob/media/search-KSNTE.gif "input not text")
+![input not text](https://github.com/godbout/kindaVim/blob/media/search-KSNTE.gif "input not text")
 
 straight from your Vim brain to the underlying macOS. kV takes care of the mess in the middle.
 
@@ -346,7 +346,7 @@ other P.S.: the number of Awesome Humans currently subscribed is updated daily o
 
 # SHIT, DID YOU KNOW?
 
-![bye bye caps lock](htts://github.com/godbout/kindaVim/blob/media/did-you-know.png "haha")
+![bye bye caps lock](https://github.com/godbout/kindaVim/blob/media/did-you-know.png "haha")
 
 # ROADMAP SHIT
 * add a plethora of missing Vim moves ([ask!](https://github.com/godbout/kindaVim/issues/new))
