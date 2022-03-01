@@ -5,7 +5,4 @@ build/
 
 xcuserdata/
 
-.swp
-.swo
-.swm
-.swn
+Licensing.swift
