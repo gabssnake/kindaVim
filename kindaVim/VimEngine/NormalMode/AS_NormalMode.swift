@@ -69,7 +69,7 @@ extension KindaVimEngine {
             case .d:
                 enterOperatorPendingForNormalMode(with: keyCombination)
             case .dollarSign:
-                let newElement = asNormalMode.dollarSign(on: currentElement)
+                let newElement = asNormalMode.dollarSign(times: count, on: currentElement)
                 push(element: newElement)
                 endCurrentMove()
             case .E:

@@ -722,7 +722,7 @@ class AccessibilityStrategyNormalModeMock: AccessibilityStrategyNormalModeProtoc
         return element
     }
 
-    func dollarSign(on element: AccessibilityTextElement) -> AccessibilityTextElement {
+    func dollarSign(times count: Int?, on element: AccessibilityTextElement) -> AccessibilityTextElement {
         functionCalled = #function
 
         return element
