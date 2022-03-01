@@ -19,7 +19,7 @@ extension SucceedingASNM_X__Tests {
     
     // synonym
     func test_that_it_calls_the_correction_function_on_the_AccessibilityStrategy() {
-        XCTAssertEqual(asNormalModeMock.functionCalled, "dh(on:_:)")
+        XCTAssertEqual(asNormalModeMock.functionCalled, "dh(times:on:_:)")
     }
     
     func test_that_it_keeps_Vim_in_NormalMode() {
