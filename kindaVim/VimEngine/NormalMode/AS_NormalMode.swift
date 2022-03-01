@@ -228,7 +228,7 @@ extension KindaVimEngine {
                 push(element: newElement)
                 endCurrentMove()
             case .underscore:
-                let newElement = asNormalMode.underscore(on: currentElement)
+                let newElement = asNormalMode.underscore(times: count, on: currentElement)
                 push(element: newElement)
                 endCurrentMove()
             case .V:

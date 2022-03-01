@@ -19,7 +19,7 @@ class SucceedingASNM___Tests: ASNM_BaseTests {
 extension SucceedingASNM___Tests {
     
     func test_that_it_calls_the_correct_function_on_accessibility_strategy() {
-        XCTAssertEqual(asNormalModeMock.functionCalled, "underscore(on:)")
+        XCTAssertEqual(asNormalModeMock.functionCalled, "underscore(times:on:)")
     }
     
     func test_that_it_keeps_Vim_in_NormalMode() {

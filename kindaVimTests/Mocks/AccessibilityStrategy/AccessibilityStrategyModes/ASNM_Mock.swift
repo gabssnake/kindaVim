@@ -796,7 +796,7 @@ class AccessibilityStrategyNormalModeMock: AccessibilityStrategyNormalModeProtoc
         return element
     }
     
-    func underscore(on element: AccessibilityTextElement) -> AccessibilityTextElement {
+    func underscore(times count: Int?, on element: AccessibilityTextElement) -> AccessibilityTextElement {
         functionCalled = #function
         
         return element
