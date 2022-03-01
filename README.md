@@ -9,7 +9,7 @@
     </a>
 </p>
 
-# APP CORE AND KINDAVIMENGINE CORE
+# APP CORE AND KINDAVIM ENGINE CORE
 
 this holds the source of the App Core and the kindaVim Engine Core. the rest of kindaVim is split into different packages, all open source:
 
@@ -19,6 +19,14 @@ this holds the source of the App Core and the kindaVim Engine Core. the rest of 
 * [Commands](https://github.com/godbout/Commands)
 * [KeyCombination](https://github.com/godbout/KeyCombination)
 * [Common](https://github.com/godbout/Common)
+
+# ACCESSIBILITY STRATEGY TEST APP
+
+the Accessibility Strategy requires an external app to be tested. the app and the Unit and UI tests are available here: 
+
+* [AccessibilityStrategyTestApp](https://github.com/godbout/AccessibilityStrategyTestApp)
+
+# LICENSE.SWIFT
 
 the `License.swift` file is not included. this is the file that contains private and obfuscated API Keys and data regarding license status.
 you can provide your own implementation, or just remove any reference in the source code.
