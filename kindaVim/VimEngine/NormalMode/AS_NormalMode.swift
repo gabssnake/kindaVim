@@ -254,7 +254,7 @@ extension KindaVimEngine {
                 push(element: newElement)
                 endCurrentMove()
             case .x:
-                let newElement = asNormalMode.dl(on: currentElement, &state)
+                let newElement = asNormalMode.dl(times: count, on: currentElement, &state)
                 push(element: newElement)
                 endCurrentMove()
             case .Y:
@@ -511,7 +511,7 @@ extension KindaVimEngine {
                 push(element: newElement)
                 enterNormalMode()
             case [.d, .l]:
-                let newElement = asNormalMode.dl(on: currentElement, &state)
+                let newElement = asNormalMode.dl(times: count, on: currentElement, &state)
                 push(element: newElement)
                 enterNormalMode()
             case [.d, .T]:
