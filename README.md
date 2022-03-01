@@ -1,9 +1,9 @@
 <div align="center">
-    <img src="https://github.com/godbout/kindaVim.theapp/blob/master/assets/icon.png">
+    <img src="https://github.com/godbout/kindaVim/blob/media/icon.png">
     <h1>brings Vim moves to macOS input fields. and non input fields. is that everywhere yet?</h1>
 </div>
 
-![awesome stuff happening in there](https://raw.githubusercontent.com/godbout/kindaVim.theapp/master/assets/gif.gif "hehe")
+![awesome stuff happening in there](https://raw.githubusercontent.com/godbout/kindaVim/media/gif.gif "hehe")
 
 ---
 
@@ -21,31 +21,31 @@ maybe [watch the videos](https://www.youtube.com/channel/UC3ZP3QFMhNn3ivJgqoEW4U
 
 ## native apps with macOS Accessibility support
 
-![Xcode input](https://raw.githubusercontent.com/godbout/kindaVim.theapp/master/assets/Xcode-input.gif "Xcode input")
+![Xcode input](https://raw.githubusercontent.com/godbout/kindaVim/media/Xcode-input.gif "Xcode input")
 
 ## native apps without macOS Accessibility support
 
-![Mail input](https://raw.githubusercontent.com/godbout/kindaVim.theapp/master/assets/Mail-input.gif "Mail input")
+![Mail input](https://raw.githubusercontent.com/godbout/kindaVim/media/Mail-input.gif "Mail input")
 
 ## restricted apps with some macOS Accessibility support
 
-![Safari input](https://raw.githubusercontent.com/godbout/kindaVim.theapp/master/assets/Safari-input.gif "Safari input")
+![Safari input](https://raw.githubusercontent.com/godbout/kindaVim/media/Safari-input.gif "Safari input")
 
 ## Electron apps with (kinda) proper macOS Accessibility support
 
-![Logseq input](https://raw.githubusercontent.com/godbout/kindaVim.theapp/master/assets/Logseq-input.gif "Logseq input")
+![Logseq input](https://raw.githubusercontent.com/godbout/kindaVim/media/Logseq-input.gif "Logseq input")
 
 ## Electron apps with bad bad bad macOS Accessibility support
 
-![ClickUp input](https://raw.githubusercontent.com/godbout/kindaVim.theapp/master/assets/ClickUp-input.gif "ClickUp input")
+![ClickUp input](https://raw.githubusercontent.com/godbout/kindaVim/media/ClickUp-input.gif "ClickUp input")
 
 ## UI Elements
 
-![Xcode UI1](https://raw.githubusercontent.com/godbout/kindaVim.theapp/master/assets/Xcode-UI1.gif "Xcode UI1")
-![Xcode UI2](https://raw.githubusercontent.com/godbout/kindaVim.theapp/master/assets/Xcode-UI2.gif "Xcode UI2")
-![Mail UI](https://raw.githubusercontent.com/godbout/kindaVim.theapp/master/assets/Mail-UI.gif "Mail UI")
-![Alfred UI](https://raw.githubusercontent.com/godbout/kindaVim.theapp/master/assets/Alfred-UI.gif "Alfred UI")
-![Help Menu UI](https://raw.githubusercontent.com/godbout/kindaVim.theapp/master/assets/Help-Menu-UI.gif "Help Menu UI")
+![Xcode UI1](https://raw.githubusercontent.com/godbout/kindaVim/media/Xcode-UI1.gif "Xcode UI1")
+![Xcode UI2](https://raw.githubusercontent.com/godbout/kindaVim/media/Xcode-UI2.gif "Xcode UI2")
+![Mail UI](https://raw.githubusercontent.com/godbout/kindaVim/media/Mail-UI.gif "Mail UI")
+![Alfred UI](https://raw.githubusercontent.com/godbout/kindaVim/media/Alfred-UI.gif "Alfred UI")
+![Help Menu UI](https://raw.githubusercontent.com/godbout/kindaVim/media/Help-Menu-UI.gif "Help Menu UI")
 
 # HOW DOES THAT SHIT WORK
 
@@ -62,15 +62,15 @@ e.g. `/the`:
 
 * input is text readable
 
-![input text readable](https://raw.githubusercontent.com/godbout/kindaVim.theapp/master/assets/search-AS.gif "input text readable")
+![input text readable](https://raw.githubusercontent.com/godbout/kindaVim/media/search-AS.gif "input text readable")
 
 * input is text not readable
 
-![input text not readable](https://raw.githubusercontent.com/godbout/kindaVim.theapp/master/assets/search-KSTE.gif "input text not readable")
+![input text not readable](https://raw.githubusercontent.com/godbout/kindaVim/media/search-KSTE.gif "input text not readable")
 
 * input is not text
 
-![input not text](https://raw.githubusercontent.com/godbout/kindaVim.theapp/master/assets/search-KSNTE.gif "input not text")
+![input not text](https://raw.githubusercontent.com/godbout/kindaVim/media/search-KSNTE.gif "input not text")
 
 straight from your Vim brain to the underlying macOS. kV takes care of the mess in the middle.
 
@@ -78,7 +78,7 @@ straight from your Vim brain to the underlying macOS. kV takes care of the mess 
 
 you can use kindaVim fully for USD$0 a lifetime, but everyday from 5am to 1pm (Winter Schedule) it'll need its 8 hours of sleep. if you wanna torture kV 24/7, you'll need to get him a [good cup of ☕️ a month](https://subscribe.kindavim.app) (USD$3.69). 
 
-P.S.: if you're happy with the state of the old betas you can always download them on GitHub. they don't need coffee. last one is [1b25](https://github.com/godbout/kindaVim.theapp/releases/tag/1b.25).
+P.S.: if you're happy with the state of the old betas you can always download them on GitHub. they don't need coffee. last one is [1b25](https://github.com/godbout/kindaVim/releases/tag/1b.25).
 
 other P.S.: the number of Awesome Humans currently subscribed is updated daily on [kindaVim.app](https://kindavim.app) 😀️
 
@@ -345,16 +345,16 @@ other P.S.: the number of Awesome Humans currently subscribed is updated daily o
 
 # SHIT, DID YOU KNOW?
 
-![bye bye caps lock](https://raw.githubusercontent.com/godbout/kindaVim.theapp/master/assets/did-you-know.png "haha")
+![bye bye caps lock](https://raw.githubusercontent.com/godbout/kindaVim/media/did-you-know.png "haha")
 
 # ROADMAP SHIT
-* add a plethora of missing Vim moves ([ask!](https://github.com/godbout/kindaVim.theapp/issues/new))
-* update all moves to support new global count system ([ask!](https://github.com/godbout/kindaVim.theapp/issues/new))
+* add a plethora of missing Vim moves ([ask!](https://github.com/godbout/kindaVim/issues/new))
+* update all moves to support new global count system ([ask!](https://github.com/godbout/kindaVim/issues/new))
 * users' requests
 
 # FEEDBACK 💩️
 
-* whether you need a missing move, want to report a bug or ask for a feature, just [open an issue](https://github.com/godbout/kindaVim.theapp/issues/new).
+* whether you need a missing move, want to report a bug or ask for a feature, just [open an issue](https://github.com/godbout/kindaVim/issues/new).
 
 # TESTS SHIT AND OPEN SOURCE SHIT
 
