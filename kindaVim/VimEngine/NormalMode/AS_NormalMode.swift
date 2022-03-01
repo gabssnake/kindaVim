@@ -339,7 +339,7 @@ extension KindaVimEngine {
                 push(element: newElement)
                 enterInsertMode()
             case [.c, .h]:
-                let newElement = asNormalMode.ch(on: currentElement, &state)
+                let newElement = asNormalMode.ch(times: count, on: currentElement, &state)
                 push(element: newElement)
                 enterInsertMode()
             case [.c, .i]:
