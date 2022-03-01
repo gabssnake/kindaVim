@@ -203,7 +203,7 @@ extension KindaVimEngine {
                 push(element: newElement)
                 enterInsertMode()
             case .s:
-                let newElement = asNormalMode.cl(on: currentElement, &state)
+                let newElement = asNormalMode.cl(times: count, on: currentElement, &state)
                 push(element: newElement)
                 enterInsertMode()
             case .semicolon:
@@ -401,7 +401,7 @@ extension KindaVimEngine {
                 push(element: newElement)
                 enterInsertMode()
             case [.c, .l]:
-                let newElement = asNormalMode.cl(on: currentElement, &state)
+                let newElement = asNormalMode.cl(times: count, on: currentElement, &state)
                 push(element: newElement)
                 enterInsertMode()
             case [.c, .t]:

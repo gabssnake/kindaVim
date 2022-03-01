@@ -18,7 +18,7 @@ class ASNM_s_Tests: ASNM_BaseTests {
 extension ASNM_s_Tests {
     
     func test_that_it_calls_the_correct_function_on_the_AccessibilityStrategy() {
-        XCTAssertEqual(asNormalModeMock.functionCalled, "cl(on:_:)")
+        XCTAssertEqual(asNormalModeMock.functionCalled, "cl(times:on:_:)")
     }
     
     func test_that_it_switches_Vim_into_insert_mode() {
