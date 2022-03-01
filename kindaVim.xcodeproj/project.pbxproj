@@ -42,6 +42,7 @@
 		912BC45A278CB875000E999C /* KSNM_v_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912BC459278CB875000E999C /* KSNM_v_Tests.swift */; };
 		91351D672785B40C0035577C /* Commands in Frameworks */ = {isa = PBXBuildFile; productRef = 91351D662785B40C0035577C /* Commands */; };
 		913F4F1127CE4E4E00CDD651 /* LicensePane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913F4F1027CE4E4E00CDD651 /* LicensePane.swift */; };
+		913F4F1327CE5AD400CDD651 /* Licensing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913F4F1227CE5AD400CDD651 /* Licensing.swift */; };
 		913FC721277A236800D89166 /* InputFieldObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913FC720277A236800D89166 /* InputFieldObserver.swift */; };
 		9140F2D52791C62300583D09 /* ASNM_;_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9140F2D42791C62300583D09 /* ASNM_;_Tests.swift */; };
 		9140F2D72791C63600583D09 /* ASNM_,_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9140F2D62791C63600583D09 /* ASNM_,_Tests.swift */; };
@@ -90,7 +91,6 @@
 		916E36E427B054C30028F738 /* ExpiredLicensePopoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D0577F27B02A5A0011DC38 /* ExpiredLicensePopoverView.swift */; };
 		916E36E527B054C60028F738 /* TooLongCouldntCheckPopoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D0578127B02D7A0011DC38 /* TooLongCouldntCheckPopoverView.swift */; };
 		91737498279E96AA003C563D /* LicensingBaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91737497279E96AA003C563D /* LicensingBaseTests.swift */; };
-		91737499279E985A003C563D /* Licensing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91943A34279D15AD001C8393 /* Licensing.swift */; };
 		9173749A279E988A003C563D /* Paddle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91943A30279D1558001C8393 /* Paddle.framework */; };
 		9173749F279EA01C003C563D /* HasNoLicenseMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9173749E279EA01C003C563D /* HasNoLicenseMock.swift */; };
 		917374A7279EC345003C563D /* BedtimePopoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917374A6279EC345003C563D /* BedtimePopoverView.swift */; };
@@ -445,7 +445,6 @@
 		918F306A2787569E00AD68DF /* KeyMappingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918F30692787569E00AD68DF /* KeyMappingTests.swift */; };
 		91943A31279D1558001C8393 /* Paddle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91943A30279D1558001C8393 /* Paddle.framework */; };
 		91943A32279D1579001C8393 /* Paddle.framework in Copy Paddle */ = {isa = PBXBuildFile; fileRef = 91943A30279D1558001C8393 /* Paddle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		91943A35279D15AD001C8393 /* Licensing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91943A34279D15AD001C8393 /* Licensing.swift */; };
 		9196851A27BC375D006EBFD2 /* ASNM_return_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9196851927BC375D006EBFD2 /* ASNM_return_Tests.swift */; };
 		9196851C27BC386A006EBFD2 /* KSNM_return_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9196851B27BC386A006EBFD2 /* KSNM_return_Tests.swift */; };
 		919A61D727AFD5370089B50F /* HasNoLicenseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919A61D627AFD5370089B50F /* HasNoLicenseTests.swift */; };
@@ -625,13 +624,13 @@
 		912BC457278CB86B000E999C /* KSNM_V__Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KSNM_V__Tests.swift; sourceTree = "<group>"; };
 		912BC459278CB875000E999C /* KSNM_v_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KSNM_v_Tests.swift; sourceTree = "<group>"; };
 		913F4F1027CE4E4E00CDD651 /* LicensePane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LicensePane.swift; sourceTree = "<group>"; };
+		913F4F1227CE5AD400CDD651 /* Licensing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Licensing.swift; sourceTree = "<group>"; };
 		913FC720277A236800D89166 /* InputFieldObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputFieldObserver.swift; sourceTree = "<group>"; };
 		9140F2D42791C62300583D09 /* ASNM_;_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ASNM_;_Tests.swift"; sourceTree = "<group>"; };
 		9140F2D62791C63600583D09 /* ASNM_,_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ASNM_,_Tests.swift"; sourceTree = "<group>"; };
 		91497ECB2789F006006CA23C /* AutoSucceedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoSucceedTests.swift; sourceTree = "<group>"; };
 		914D662027266467005B9D99 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
 		914DA4962743C20E005748F7 /* CountSystemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountSystemTests.swift; sourceTree = "<group>"; };
-		915D15C027CE080A00CBDD58 /* AccessibilityStrategy */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = AccessibilityStrategy; path = ../AccessibilityStrategy; sourceTree = "<group>"; };
 		9164F34D27C2A8B700B3C2BB /* ASVM_;_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ASVM_;_Tests.swift"; sourceTree = "<group>"; };
 		9164F34F27C2A8BE00B3C2BB /* ASVM_,_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ASVM_,_Tests.swift"; sourceTree = "<group>"; };
 		916993FE27CB6FC40038E4C0 /* ASVM_upArrow_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASVM_upArrow_Tests.swift; sourceTree = "<group>"; };
@@ -1020,7 +1019,6 @@
 		918F303F2787559C00AD68DF /* KSVM_c_Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KSVM_c_Tests.swift; sourceTree = "<group>"; };
 		918F30692787569E00AD68DF /* KeyMappingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyMappingTests.swift; sourceTree = "<group>"; };
 		91943A30279D1558001C8393 /* Paddle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Paddle.framework; sourceTree = "<group>"; };
-		91943A34279D15AD001C8393 /* Licensing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Licensing.swift; sourceTree = "<group>"; };
 		9196851927BC375D006EBFD2 /* ASNM_return_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASNM_return_Tests.swift; sourceTree = "<group>"; };
 		9196851B27BC386A006EBFD2 /* KSNM_return_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KSNM_return_Tests.swift; sourceTree = "<group>"; };
 		919A61D627AFD5370089B50F /* HasNoLicenseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HasNoLicenseTests.swift; sourceTree = "<group>"; };
@@ -1276,7 +1274,6 @@
 		916ACF8426FE086A000E9757 = {
 			isa = PBXGroup;
 			children = (
-				915D15C027CE080A00CBDD58 /* AccessibilityStrategy */,
 				916ACF8F26FE086B000E9757 /* kindaVim */,
 				916ACFA126FE086C000E9757 /* kindaVimTests */,
 				916ACFAB26FE086C000E9757 /* kindaVimUITests */,
@@ -1984,10 +1981,10 @@
 		91943A33279D1596001C8393 /* Licensing */ = {
 			isa = PBXGroup;
 			children = (
-				91943A34279D15AD001C8393 /* Licensing.swift */,
 				917374A6279EC345003C563D /* BedtimePopoverView.swift */,
 				91D0577F27B02A5A0011DC38 /* ExpiredLicensePopoverView.swift */,
 				91D0578127B02D7A0011DC38 /* TooLongCouldntCheckPopoverView.swift */,
+				913F4F1227CE5AD400CDD651 /* Licensing.swift */,
 			);
 			path = Licensing;
 			sourceTree = "<group>";
@@ -2278,6 +2275,7 @@
 				9103C59A271C7B5300BDEBD7 /* KS_VisualMode.swift in Sources */,
 				91A967422741447400E1CA7E /* UpdaterController.swift in Sources */,
 				91840DF026FE096C00E6048E /* HazeOverWindow.swift in Sources */,
+				913F4F1327CE5AD400CDD651 /* Licensing.swift in Sources */,
 				917374A7279EC345003C563D /* BedtimePopoverView.swift in Sources */,
 				9118CEA726FEF90A005F0907 /* SettingsView.swift in Sources */,
 				91840DF226FE096C00E6048E /* EventTapController.swift in Sources */,
@@ -2301,7 +2299,6 @@
 				91840DFC26FE096C00E6048E /* KindaVimEngine.swift in Sources */,
 				91840DED26FE096C00E6048E /* Window.swift in Sources */,
 				914D662127266467005B9D99 /* SplashScreenView.swift in Sources */,
-				91943A35279D15AD001C8393 /* Licensing.swift in Sources */,
 				913FC721277A236800D89166 /* InputFieldObserver.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2808,7 +2805,6 @@
 				91840E0B26FE09A300E6048E /* _ASUI_NM_BaseTests.swift in Sources */,
 				91D72B5D275E25FE00CC46B4 /* ASUI_NM_ci{_Tests.swift in Sources */,
 				9103C59F271C7F1400BDEBD7 /* AS_VisualMode.swift in Sources */,
-				91737499279E985A003C563D /* Licensing.swift in Sources */,
 				91C26B34277B2E27002C3CED /* AppCore.swift in Sources */,
 				91EC8C6127675AB000E40F27 /* ASUI_NM_cb_Tests.swift in Sources */,
 				91840E0F26FE09A300E6048E /* ASUI_NM_caw_Tests.swift in Sources */,
