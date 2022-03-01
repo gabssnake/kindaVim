@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9103212227953B0F00584542 /* LicensePane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9103212127953B0F00584542 /* LicensePane.swift */; };
 		9103C1BC27BB9789002DD8C9 /* KSNM_?_Normal_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9103C1BB27BB9789002DD8C9 /* KSNM_?_Normal_Tests.swift */; };
 		9103C1BE27BB9792002DD8C9 /* KSNM_?_Delete_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9103C1BD27BB9792002DD8C9 /* KSNM_?_Delete_Tests.swift */; };
 		9103C1C027BB979B002DD8C9 /* KSNM_?_Escape_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9103C1BF27BB979B002DD8C9 /* KSNM_?_Escape_Tests.swift */; };
@@ -42,6 +41,7 @@
 		912BC458278CB86B000E999C /* KSNM_V__Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912BC457278CB86B000E999C /* KSNM_V__Tests.swift */; };
 		912BC45A278CB875000E999C /* KSNM_v_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912BC459278CB875000E999C /* KSNM_v_Tests.swift */; };
 		91351D672785B40C0035577C /* Commands in Frameworks */ = {isa = PBXBuildFile; productRef = 91351D662785B40C0035577C /* Commands */; };
+		913F4F1127CE4E4E00CDD651 /* LicensePane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913F4F1027CE4E4E00CDD651 /* LicensePane.swift */; };
 		913FC721277A236800D89166 /* InputFieldObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913FC720277A236800D89166 /* InputFieldObserver.swift */; };
 		9140F2D52791C62300583D09 /* ASNM_;_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9140F2D42791C62300583D09 /* ASNM_;_Tests.swift */; };
 		9140F2D72791C63600583D09 /* ASNM_,_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9140F2D62791C63600583D09 /* ASNM_,_Tests.swift */; };
@@ -602,7 +602,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		9103212127953B0F00584542 /* LicensePane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LicensePane.swift; sourceTree = "<group>"; };
 		9103C1BB27BB9789002DD8C9 /* KSNM_?_Normal_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KSNM_?_Normal_Tests.swift"; sourceTree = "<group>"; };
 		9103C1BD27BB9792002DD8C9 /* KSNM_?_Delete_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KSNM_?_Delete_Tests.swift"; sourceTree = "<group>"; };
 		9103C1BF27BB979B002DD8C9 /* KSNM_?_Escape_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KSNM_?_Escape_Tests.swift"; sourceTree = "<group>"; };
@@ -625,6 +624,7 @@
 		912BC44A278A1417000E999C /* ASSucceeding_TextField_Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASSucceeding_TextField_Mock.swift; sourceTree = "<group>"; };
 		912BC457278CB86B000E999C /* KSNM_V__Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KSNM_V__Tests.swift; sourceTree = "<group>"; };
 		912BC459278CB875000E999C /* KSNM_v_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KSNM_v_Tests.swift; sourceTree = "<group>"; };
+		913F4F1027CE4E4E00CDD651 /* LicensePane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LicensePane.swift; sourceTree = "<group>"; };
 		913FC720277A236800D89166 /* InputFieldObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputFieldObserver.swift; sourceTree = "<group>"; };
 		9140F2D42791C62300583D09 /* ASNM_;_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ASNM_;_Tests.swift"; sourceTree = "<group>"; };
 		9140F2D62791C63600583D09 /* ASNM_,_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ASNM_,_Tests.swift"; sourceTree = "<group>"; };
@@ -1925,7 +1925,7 @@
 				91840DE526FE096C00E6048E /* GeneralPane.swift */,
 				91840DE626FE096C00E6048E /* FamiliesPane.swift */,
 				91840DE726FE096C00E6048E /* VisualsPane.swift */,
-				9103212127953B0F00584542 /* LicensePane.swift */,
+				913F4F1027CE4E4E00CDD651 /* LicensePane.swift */,
 			);
 			path = Panes;
 			sourceTree = "<group>";
@@ -2284,6 +2284,7 @@
 				91840DEF26FE096C00E6048E /* CharactersView.swift in Sources */,
 				916ACF9126FE086B000E9757 /* kindaVimApp.swift in Sources */,
 				91840DF626FE096C00E6048E /* KeyboardShortcuts.swift in Sources */,
+				913F4F1127CE4E4E00CDD651 /* LicensePane.swift in Sources */,
 				9103C594271C7A3800BDEBD7 /* AS_NormalMode.swift in Sources */,
 				91840DEE26FE096C00E6048E /* CharactersWindow.swift in Sources */,
 				91D0578227B02D7A0011DC38 /* TooLongCouldntCheckPopoverView.swift in Sources */,
@@ -2293,7 +2294,6 @@
 				91840DFA26FE096C00E6048E /* VisualsPane.swift in Sources */,
 				91D0578027B02A5A0011DC38 /* ExpiredLicensePopoverView.swift in Sources */,
 				9103C596271C7ABA00BDEBD7 /* KS_NormalMode.swift in Sources */,
-				9103212227953B0F00584542 /* LicensePane.swift in Sources */,
 				91840DF426FE096C00E6048E /* AppCore.swift in Sources */,
 				91E7DFA12739578D007CC0D5 /* Settings.swift in Sources */,
 				91840DFD26FE096C00E6048E /* UITestView.swift in Sources */,
