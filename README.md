@@ -30,3 +30,7 @@ the Accessibility Strategy requires an external app to be tested. the app and th
 
 the `License.swift` file is not included. this is the file that contains private and obfuscated API Keys and data regarding license status.
 you can provide your own implementation, or just remove any reference in the source code.
+
+# THE BLAH BLAH
+
+this was a closed source paid app at first. this is now an open source paid app. the docs are [here](https://github.com/godbout/kindaVim.theapp).
